@@ -19,6 +19,8 @@ body {
 h1 {
     font-weight: 700;
     color: hsl(218, 44%, 22%);
+    margin-bottom: 20px;
+    font-size: 23px;
 }
 
 p {
@@ -34,7 +36,7 @@ p {
     text-align: center;
     background-color: hsl(0, 0%, 100%);
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 
 
     
@@ -43,11 +45,26 @@ p {
 .container .qr-code {
     border-radius: 10px;
     margin-bottom: 20px;
-    width: 390px;
+    width: 320px;
 }
 
-.container h1 {
-    margin-bottom: 20px;
-}
+
     
+@media (max-width: 500px) {
+    .container {
+        max-width: 375px;
+    }
 
+    .container .qr-code {
+        max-width: 290px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    
+   
+
+    p {
+        margin-bottom: 25px;
+    }
+    
+}
